@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>金乃家真好呷 - 頂級和牛與精選肉品專賣</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        html { scroll-behavior: smooth; }
+        .gold-gradient {
+            background: linear-gradient(135deg, #BF953F 0%, #FCF6BA 25%, #B38728 50%, #FBF5B7 75%, #AA771C 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+    </style>
+</head>
+<body class="bg-stone-50 text-stone-800 font-sans antialiased">
+
+    <header class="sticky top-0 z-50 bg-stone-900/95 text-white backdrop-blur shadow-md">
+        <div class="max-w-6xl mx-auto px-4 py-3 flex justify-between items-center">
+            <a href="#" class="flex items-center space-x-2 group">
+                <div class="relative flex items-center justify-center w-10 h-10 rounded-full border-2 border-amber-400 bg-stone-800">
+                    <span class="text-amber-400 font-bold text-lg">金</span>
+                </div>
+                <div class="flex flex-col">
+                    <span class="text-xl font-black tracking-wider gold-gradient">金乃家真好呷</span>
+                    <span class="text-[10px] text-stone-400 tracking-widest -mt-1">PREMIUM MEAT</span>
+                </div>
+            </a>
+            <nav class="hidden md:flex space-x-8 text-sm font-medium">
+                <a href="#about" class="hover:text-amber-400 transition">關於我們</a>
+                <a href="#products" class="hover:text-amber-400 transition">美味菜單</a>
+                <a href="#order" class="hover:text-amber-400 transition">即時點餐</a>
+            </nav>
+            <a href="#order" class="bg-amber-500 hover:bg-amber-600 text-stone-950 px-4 py-2 rounded-full text-sm font-bold transition flex items-center space-x-1 shadow-lg">
+                <i class="fa-solid fa-utensils"></i>
+                <span>立即點餐</span>
+            </a>
+        </div>
+    </header>
+
+    <section class="relative bg-stone-900 text-white py-24 md:py-32 px-4 overflow-hidden">
+        <div class="absolute inset-0 opacity-10 bg-[radial-gradient(#e5e7eb_1px,transparent_1px)] [background-size:16px_16px]"></div>
+        <div class="absolute -right-20 -bottom-20 w-80 h-80 bg-amber-500/10 rounded-full blur-3xl"></div>
+        <div class="max-w-4xl mx-auto text-center relative z-10">
+            <span class="inline-block border border-amber-400 text-amber-400 text-xs px-3 py-1 rounded-full uppercase tracking-widest mb-4 font-semibold">
+                日本頂級 A5 和牛直送
+            </span>
+            <h1 class="text-4xl md:text-6xl font-black tracking-tight mb-6 leading-tight">
+                極致的肉質饗宴<br>
+                <span class="gold-gradient">嚴選食材，真好呷！</span>
+            </h1>
+            <p class="text-stone-300 text-base md:text-xl max-w-2xl mx-auto mb-10 leading-relaxed">
+                「金乃家」秉持日本職人精神，為您獻上產地直送的 A5 和牛漢堡排與新鮮現磨絞肉。每一口，都是奢華與幸福的滋味。
+            </p>
+            <div class="flex flex-col sm:flex-row justify-center">
+                <a href="#products" class="bg-amber-500 hover:bg-amber-600 text-stone-950 font-bold px-8 py-4 rounded-xl shadow-xl transition-all duration-300 transform hover:-translate-y-1 text-center">
+                    瀏覽商品清單
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="py-20 px-4 bg-white">
+        <div class="max-w-5xl mx-auto">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-bold mb-2">為什麼選擇金乃家？</h2>
+                <div class="w-12 h-1 bg-amber-500 mx-auto rounded"></div>
+            </div>
+            <div class="grid md:grid-cols-3 gap-8 text-center">
+                <div class="p-6 bg-stone-50 rounded-2xl border border-stone-100 shadow-sm">
+                    <div class="w-12 h-12 bg-amber-100 text-amber-600 rounded-xl flex items-center justify-center mx-auto mb-4 text-xl">
+                        <i class="fa-solid fa-award"></i>
+                    </div>
+                    <h3 class="text-lg font-bold mb-2">正宗 A5 和牛</h3>
+                    <p class="text-stone-600 text-sm leading-relaxed">嚴選日本最高等級 A5 和牛，富含極致大理石油花，入口即化，肉香濃郁逼人。</p>
+                </div>
+                <div class="p-6 bg-stone-50 rounded-2xl border border-stone-100 shadow-sm">
+                    <div class="w-12 h-12 bg-amber-100 text-amber-600 rounded-xl flex items-center justify-center mx-auto mb-4 text-xl">
+                        <i class="fa-solid fa-kitchen-set"></i>
+                    </div>
+                    <h3 class="text-lg font-bold mb-2">每日新鮮現絞</h3>
+                    <p class="text-stone-600 text-sm leading-relaxed">絕不使用隔夜肉或重組肉！堅持低溫環境每日現磨絞肉，鎖住最天然的鮮甜肉汁。</p>
+                </div>
+                <div class="p-6 bg-stone-50 rounded-2xl border border-stone-100 shadow-sm">
+                    <div class="w-12 h-12 bg-amber-100 text-amber-600 rounded-xl flex items-center justify-center mx-auto mb-4 text-xl">
+                        <i class="fa-solid fa-wallet"></i>
+                    </div>
+                    <h3 class="text-lg font-bold mb-2">極致親民價格</h3>
+                    <p class="text-stone-600 text-sm leading-relaxed">打破「和牛等於高價」的刻板印象，以批發價直接回饋饕客，在家也能輕鬆享受奢華。</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="products" class="py-20 px-4 bg-stone-100">
+        <div class="max-w-5xl mx-auto">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-bold mb-2">嚴選美味商品</h2>
+                <p class="text-stone-500 text-sm">職人手工割烹，限量供應中</p>
+                <div class="w-12 h-1 bg-amber-500 mx-auto rounded mt-2"></div>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="bg-white rounded-3xl overflow-hidden shadow-md border border-stone-200 flex flex-col justify-between group hover:shadow-xl transition-all duration-300">
+                    <div>
+                        <div class="h-56 overflow-hidden bg-stone-200">
+                            <img src="wagyu.jpg" class="w-full h-full object-cover group-hover:scale-105 transition duration-300" alt="日本 A5 和牛漢堡排">
+                        </div>
+                        <div class="p-6">
+                            <div class="flex justify-between items-start mb-2">
+                                <span class="bg-red-500 text-white text-xs px-2 py-1 rounded font-bold">人氣招牌</span>
+                                <span class="text-stone-400 text-xs">產地直送</span>
+                            </div>
+                            <h3 class="text-xl font-bold mb-2 group-hover:text-amber-600 transition">日本 A5 和牛漢堡排</h3>
+                            <p class="text-stone-600 text-sm leading-relaxed">黃金肥瘦比例揉製，肉質細緻、飽滿多汁，輕輕一煎便香氣四溢，頂級享受的首選！</p>
+                        </div>
+                    </div>
+                    <div class="px-6 py-4 bg-stone-50 border-t border-stone-100 flex justify-between items-center">
+                        <div class="text-stone-500 text-xs">規格：1顆 (約100g)</div>
+                        <div class="text-2xl font-black text-amber-600">NT$ 50</div>
+                    </div>
+                </div>
+
+                <div class="bg-white rounded-3xl overflow-hidden shadow-md border border-stone-200 flex flex-col justify-between group hover:shadow-xl transition-all duration-300">
+                    <div>
+                        <div class="h-56 overflow-hidden bg-stone-200">
+                            <img src="pork.jpg" class="w-full h-full object-cover group-hover:scale-105 transition duration-300" alt="精選豬絞肉">
+                        </div>
+                        <div class="p-6">
+                            <div class="flex justify-between items-start mb-2">
+                                <span class="bg-stone-700 text-white text-xs px-2 py-1 rounded font-bold">家常必備</span>
+                                <span class="text-stone-400 text-xs">低脂百搭</span>
+                            </div>
+                            <h3 class="text-xl font-bold mb-2 group-hover:text-amber-600 transition">精選豬絞肉</h3>
+                            <p class="text-stone-600 text-sm leading-relaxed">嚴選合格台灣溫體豬，肥瘦適中。不論是做打拋豬、滷肉燥、水餃餡都能完美發揮。</p>
+                        </div>
+                    </div>
+                    <div class="px-6 py-4 bg-stone-50 border-t border-stone-100 flex justify-between items-center">
+                        <div class="text-stone-500 text-xs">單位：1公斤</div>
+                        <div class="text-2xl font-black text-stone-800">NT$ 250</div>
+                    </div>
+                </div>
+
+                <div class="bg-white rounded-3xl overflow-hidden shadow-md border border-stone-200 flex flex-col justify-between group hover:shadow-xl transition-all duration-300">
+                    <div>
+                        <div class="h-56 overflow-hidden bg-stone-200">
+                            <img src="wagyu_minced.jpg" class="w-full h-full object-cover group-hover:scale-105 transition duration-300" alt="特製和牛絞肉">
+                        </div>
+                        <div class="p-6">
+                            <div class="flex justify-between items-start mb-2">
+                                <span class="bg-amber-500 text-stone-950 text-xs px-2 py-1 rounded font-bold">老饕推薦</span>
+                                <span class="text-stone-400 text-xs">極致鮮甜</span>
+                            </div>
+                            <h3 class="text-xl font-bold mb-2 group-hover:text-amber-600 transition">特製和牛絞肉</h3>
+                            <p class="text-stone-600 text-sm leading-relaxed">富含和牛獨特的甘甜油脂，並附有專屬 A5 標章。非常適合製作奢華肉丸或高級肉醬義大利麵。</p>
+                        </div>
+                    </div>
+                    <div class="px-6 py-4 bg-stone-50 border-t border-stone-100 flex justify-between items-center">
+                        <div class="text-stone-500 text-xs">單位：1公斤</div>
+                        <div class="text-2xl font-black text-amber-600">NT$ 280</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="order" class="py-20 px-4 bg-white">
+        <div class="max-w-3xl mx-auto">
+            <div class="bg-stone-900 text-white rounded-3xl p-8 md:p-12 shadow-2xl relative overflow-hidden">
+                <div class="absolute top-0 right-0 w-32 h-32 bg-amber-500/10 rounded-full blur-2xl"></div>
+                
+                <div class="text-center mb-10">
+                    <h2 class="text-3xl font-bold mb-2 gold-gradient">線上快點餐</h2>
+                    <p class="text-stone-400 text-sm">選好數量後，系統將自動為您統計金額</p>
+                </div>
+
+                <form id="orderForm" class="space-y-6 relative z-10">
+                    <div class="flex flex-col sm:flex-row sm:items-center justify-between p-4 bg-stone-800/50 rounded-2xl border border-stone-700">
+                        <div class="mb-3 sm:mb-0">
+                            <h4 class="font-bold text-amber-400">日本 A5 和牛漢堡排</h4>
+                            <span class="text-xs text-stone-400">NT$ 50 / 顆 (約100g)</span>
+                        </div>
+                        <div class="flex items-center space-x-3">
+                            <button type="button" onclick="changeQty('wagyu_burger', -1)" class="w-8 h-8 rounded-full bg-stone-700 hover:bg-stone-600 flex items-center justify-center font-bold">-</button>
+                            <input type="number" id="wagyu_burger" value="0" min="0" class="w-16 text-center bg-stone-900 border border-stone-600 rounded-lg py-1 font-bold text-white focus:outline-none" onchange="calculateTotal()">
+                            <button type="button" onclick="changeQty('wagyu_burger', 1)" class="w-8 h-8 rounded-full bg-stone-700 hover:bg-stone-600 flex items-center justify-center font-bold">+</button>
+                        </div>
+                    </div>
+
+                    <div class="flex flex-col sm:flex-row sm:items-center justify-between p-4 bg-stone-800/50 rounded-2xl border border-stone-700">
+                        <div class="mb-3 sm:mb-0">
+                            <h4 class="font-bold">精選豬絞肉</h4>
+                            <span class="text-xs text-stone-400">NT$ 250 / 公斤</span>
+                        </div>
+                        <div class="flex items-center space-x-3">
+                            <button type="button" onclick="changeQty('pork_minced', -1)" class="w-8 h-8 rounded-full bg-stone-700 hover:bg-stone-600 flex items-center justify-center font-bold">-</button>
+                            <input type="number" id="pork_minced" value="0" min="0" class="w-16 text-center bg-stone-900 border border-stone-600 rounded-lg py-1 font-bold text-white focus:outline-none" onchange="calculateTotal()">
+                            <button type="button" onclick="changeQty('pork_minced', 1)" class="w-8 h-8 rounded-full bg-stone-700 hover:bg-stone-600 flex items-center justify-center font-bold">+</button>
+                        </div>
+                    </div>
+
+                    <div class="flex flex-col sm:flex-row sm:items-center justify-between p-4 bg-stone-800/50 rounded-2xl border border-stone-700">
+                        <div class="mb-3 sm:mb-0">
+                            <h4 class="font-bold text-amber-400">特製和牛絞肉</h4>
+                            <span class="text-xs text-stone-400">NT$ 280 / 公斤</span>
+                        </div>
+                        <div class="flex items-center space-x-3">
+                            <button type="button" onclick="changeQty('beef_minced', -1)" class="w-8 h-8 rounded-full bg-stone-700 hover:bg-stone-600 flex items-center justify-center font-bold">-</button>
+                            <input type="number" id="beef_minced" value="0" min="0" class="w-16 text-center bg-stone-900 border border-stone-600 rounded-lg py-1 font-bold text-white focus:outline-none" onchange="calculateTotal()">
+                            <button type="button" onclick="changeQty('beef_minced', 1)" class="w-8 h-8 rounded-full bg-stone-700 hover:bg-stone-600 flex items-center justify-center font-bold">+</button>
+                        </div>
+                    </div>
+
+                    <div class="grid sm:grid-cols-2 gap-4 pt-4 border-t border-stone-800">
+                        <div>
+                            <label class="block text-xs text-stone-400 mb-1">訂購人姓名 *</label>
+                            <input type="text" id="custName" placeholder="怎麼稱呼您" required class="w-full bg-stone-800 border border-stone-700 rounded-xl px-4 py-2 text-sm text-white focus:outline-none focus:border-amber-400">
+                        </div>
+                        <div>
+                            <label class="block text-xs text-stone-400 mb-1">聯絡電話 *</label>
+                            <input type="tel" id="custPhone" placeholder="您的電話號碼" required class="w-full bg-stone-800 border border-stone-700 rounded-xl px-4 py-2 text-sm text-white focus:outline-none focus:border-amber-400">
+                        </div>
+                    </div>
+
+                    <div class="bg-amber-500 text-stone-950 p-6 rounded-2xl flex justify-between items-center shadow-lg mt-8">
+                        <div>
+                            <p class="text-xs uppercase tracking-wider font-bold opacity-80">預估總金額</p>
+                        </div>
+                        <div class="text-3xl font-black">
+                            NT$ <span id="totalPrice">0</span>
+                        </div>
+                    </div>
+
+                    <button type="button" onclick="submitOrder()" class="w-full bg-white hover:bg-stone-100 text-stone-900 font-bold py-4 rounded-xl shadow-xl transition flex items-center justify-center space-x-2">
+                        <i class="fa-brands fa-line text-green-500 text-xl"></i>
+                        <span>送出訂單 (打開 LINE 傳送)</span>
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-stone-950 text-stone-500 py-10 text-center text-xs border-t border-stone-900">
+        <div class="max-w-4xl mx-auto px-4 space-y-4">
+            <p class="text-stone-400 font-medium">金乃家真好呷 - 精選肉品專賣店</p>
+            <p>營業時間：週一至週六 11:00 - 20:00 (每週日公休)</p>
+            <p class="text-stone-600">© 2026 金乃家真好呷. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        const PRICES = {
+            wagyu_burger: 50,
+            pork_minced: 250,
+            beef_minced: 280
+        };
+
+        function changeQty(id, amount) {
+            const input = document.getElementById(id);
+            let current = parseInt(input.value) || 0;
+            current += amount;
+            if (current < 0) current = 0;
+            input.value = current;
+            calculateTotal();
+        }
+
+        function calculateTotal() {
+            let total = 0;
+            for (const [id, price] of Object.entries(PRICES)) {
+                const qty = parseInt(document.getElementById(id).value) || 0;
+                total += qty * price;
+            }
+            document.getElementById('totalPrice').innerText = total.toLocaleString();
+            return total;
+        }
+
+        /* 終極 LINE@ 串接函數 */
+        function submitOrder() {
+            const name = document.getElementById('custName').value.trim();
+            const phone = document.getElementById('custPhone').value.trim();
+            const wQty = parseInt(document.getElementById('wagyu_burger').value) || 0;
+            const pQty = parseInt(document.getElementById('pork_minced').value) || 0;
+            const bQty = parseInt(document.getElementById('beef_minced').value) || 0;
+            
+            if (!name || !phone) {
+                alert('請填寫訂購人姓名與聯絡電話！');
+                return;
+            }
+            if (wQty === 0 && pQty === 0 && bQty === 0) {
+                alert('請至少選擇一樣商品再送出訂單喔！');
+                return;
+            }
+
+            const total = calculateTotal();
+            
+            // 格式化訂單文字
+            let text = `【金乃家真好呷】新訂單通知\n`;
+            text += `-------------------------\n`;
+            text += `訂購人：${name}\n`;
+            text += `電話：${phone}\n`;
+            text += `-------------------------\n`;
+            if(wQty > 0) text += `• 日本A5和牛漢堡排：${wQty} 顆 (約100g)\n`;
+            if(pQty > 0) text += `• 精選豬絞肉：${pQty} 公斤\n`;
+            if(bQty > 0) text += `• 特製和牛絞肉：${bQty} 公斤\n`;
+            text += `-------------------------\n`;
+            text += `預估總金額：NT$ ${total} 元\n\n`;
+            text += `※ 請直接按右下角「傳送」，小幫手收到會立刻為您安排！`;
+
+            const encodedText = encodeURIComponent(text);
+            
+            // 第一主線：直接帶入文字聊天室指令
+            const primaryUrl = `https://line.me/R/oaMessage/@669knpwy/?${encodedText}`;
+            // 第二防線：您的專屬 lin.ee 短網址備用
+            const backupUrl = `https://lin.ee/V0vtkJS`;
+            
+            alert("訂單已建立！即將為您開啟 LINE 官方聊天室，請直接按下「傳送」鍵。");
+            
+            // 執行跳轉（主線）
+            window.location.href = primaryUrl;
+
+            // 防呆觸發器：如果 1.5 秒後頁面沒被 LINE App 蓋掉，代表主線指令失敗，自動轉用備用短網址
+            setTimeout(function() {
+                if (!document.hidden) {
+                    window.location.href = backupUrl;
+                }
+            }, 1500);
+        }
+    </script>
+</body>
+</html>

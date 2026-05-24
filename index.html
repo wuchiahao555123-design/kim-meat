@@ -95,14 +95,14 @@
     </section>
 
     <section id="products" class="py-20 px-4 bg-stone-100">
-        <div class="max-w-5xl mx-auto">
+        <div class="max-w-6xl mx-auto">
             <div class="text-center mb-16">
                 <h2 class="text-3xl font-bold mb-2">嚴選美味商品</h2>
                 <p class="text-stone-500 text-sm">職人手工割烹，限量供應中</p>
                 <div class="w-12 h-1 bg-amber-500 mx-auto rounded mt-2"></div>
             </div>
 
-            <div class="grid md:grid-cols-3 gap-8">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 justify-center">
                 <div class="bg-white rounded-3xl overflow-hidden shadow-md border border-stone-200 flex flex-col justify-between group hover:shadow-xl transition-all duration-300">
                     <div>
                         <div class="h-56 overflow-hidden bg-stone-200">
@@ -162,6 +162,46 @@
                         <div class="text-2xl font-black text-amber-600">NT$ 280</div>
                     </div>
                 </div>
+
+                <div class="bg-white rounded-3xl overflow-hidden shadow-md border border-stone-200 flex flex-col justify-between group hover:shadow-xl transition-all duration-300">
+                    <div>
+                        <div class="h-56 overflow-hidden bg-stone-200">
+                            <img src="fried_chicken.jpg" class="w-full h-full object-cover group-hover:scale-105 transition duration-300" alt="唐揚炸雞">
+                        </div>
+                        <div class="p-6">
+                            <div class="flex justify-between items-start mb-2">
+                                <span class="bg-orange-500 text-white text-xs px-2 py-1 rounded font-bold">新品上市</span>
+                                <span class="text-stone-400 text-xs">外酥內嫩</span>
+                            </div>
+                            <h3 class="text-xl font-bold mb-2 group-hover:text-amber-600 transition">日式職人唐揚炸雞</h3>
+                            <p class="text-stone-600 text-sm leading-relaxed">特調日式醬汁完美醃製，鎖住飽滿雞肉原汁。外皮金黃酥脆，肉質鮮嫩 Q 彈，絕對是大人小孩的最愛！</p>
+                        </div>
+                    </div>
+                    <div class="px-6 py-4 bg-stone-50 border-t border-stone-100 flex justify-between items-center">
+                        <div class="text-stone-500 text-xs">單位：1公斤</div>
+                        <div class="text-2xl font-black text-stone-800">NT$ 260</div>
+                    </div>
+                </div>
+
+                <div class="bg-white rounded-3xl overflow-hidden shadow-md border border-stone-200 flex flex-col justify-between group hover:shadow-xl transition-all duration-300">
+                    <div>
+                        <div class="h-56 overflow-hidden bg-stone-200">
+                            <img src="wagyu_oil.jpg" class="w-full h-full object-cover group-hover:scale-105 transition duration-300" alt="和牛牛油">
+                        </div>
+                        <div class="p-6">
+                            <div class="flex justify-between items-start mb-2">
+                                <span class="bg-amber-600 text-white text-xs px-2 py-1 rounded font-bold">主廚嚴選</span>
+                                <span class="text-stone-400 text-xs">極致香氣</span>
+                            </div>
+                            <h3 class="text-xl font-bold mb-2 group-hover:text-amber-600 transition">頂級純和牛牛油</h3>
+                            <p class="text-stone-600 text-sm leading-relaxed">由 A5 和牛脂肪低溫慢火熬製提煉而成，帶有經典的和牛椰子香氣。不論炒飯、煎牛排下鍋，香氣層次瞬間飆升！</p>
+                        </div>
+                    </div>
+                    <div class="px-6 py-4 bg-stone-50 border-t border-stone-100 flex justify-between items-center">
+                        <div class="text-stone-500 text-xs">單位：1公斤</div>
+                        <div class="text-2xl font-black text-amber-600">NT$ 220</div>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
@@ -213,6 +253,30 @@
                         </div>
                     </div>
 
+                    <div class="flex flex-col sm:flex-row sm:items-center justify-between p-4 bg-stone-800/50 rounded-2xl border border-stone-700">
+                        <div class="mb-3 sm:mb-0">
+                            <h4 class="font-bold">日式職人唐揚炸雞</h4>
+                            <span class="text-xs text-stone-400">NT$ 260 / 公斤</span>
+                        </div>
+                        <div class="flex items-center space-x-3">
+                            <button type="button" onclick="changeQty('fried_chicken', -1)" class="w-8 h-8 rounded-full bg-stone-700 hover:bg-stone-600 flex items-center justify-center font-bold">-</button>
+                            <input type="number" id="fried_chicken" value="0" min="0" class="w-16 text-center bg-stone-900 border border-stone-600 rounded-lg py-1 font-bold text-white focus:outline-none" onchange="calculateTotal()">
+                            <button type="button" onclick="changeQty('fried_chicken', 1)" class="w-8 h-8 rounded-full bg-stone-700 hover:bg-stone-600 flex items-center justify-center font-bold">+</button>
+                        </div>
+                    </div>
+
+                    <div class="flex flex-col sm:flex-row sm:items-center justify-between p-4 bg-stone-800/50 rounded-2xl border border-stone-700">
+                        <div class="mb-3 sm:mb-0">
+                            <h4 class="font-bold text-amber-400">頂級純和牛牛油</h4>
+                            <span class="text-xs text-stone-400">NT$ 220 / 公斤</span>
+                        </div>
+                        <div class="flex items-center space-x-3">
+                            <button type="button" onclick="changeQty('wagyu_oil', -1)" class="w-8 h-8 rounded-full bg-stone-700 hover:bg-stone-600 flex items-center justify-center font-bold">-</button>
+                            <input type="number" id="wagyu_oil" value="0" min="0" class="w-16 text-center bg-stone-900 border border-stone-600 rounded-lg py-1 font-bold text-white focus:outline-none" onchange="calculateTotal()">
+                            <button type="button" onclick="changeQty('wagyu_oil', 1)" class="w-8 h-8 rounded-full bg-stone-700 hover:bg-stone-600 flex items-center justify-center font-bold">+</button>
+                        </div>
+                    </div>
+
                     <div class="grid sm:grid-cols-2 gap-4 pt-4 border-t border-stone-800">
                         <div>
                             <label class="block text-xs text-stone-400 mb-1">訂購人姓名 *</label>
@@ -251,10 +315,13 @@
     </footer>
 
     <script>
+        // 後台矩陣新增兩項商品的對應價格
         const PRICES = {
             wagyu_burger: 50,
             pork_minced: 250,
-            beef_minced: 280
+            beef_minced: 280,
+            fried_chicken: 260,
+            wagyu_oil: 220
         };
 
         function changeQty(id, amount) {
@@ -276,26 +343,29 @@
             return total;
         }
 
-        /* 終極 LINE@ 串接函數 */
         function submitOrder() {
             const name = document.getElementById('custName').value.trim();
             const phone = document.getElementById('custPhone').value.trim();
+            
+            // 抓取 5 個商品的數量
             const wQty = parseInt(document.getElementById('wagyu_burger').value) || 0;
             const pQty = parseInt(document.getElementById('pork_minced').value) || 0;
             const bQty = parseInt(document.getElementById('beef_minced').value) || 0;
+            const cQty = parseInt(document.getElementById('fried_chicken').value) || 0;
+            const oQty = parseInt(document.getElementById('wagyu_oil').value) || 0;
             
             if (!name || !phone) {
                 alert('請填寫訂購人姓名與聯絡電話！');
                 return;
             }
-            if (wQty === 0 && pQty === 0 && bQty === 0) {
+            if (wQty === 0 && pQty === 0 && bQty === 0 && cQty === 0 && oQty === 0) {
                 alert('請至少選擇一樣商品再送出訂單喔！');
                 return;
             }
 
             const total = calculateTotal();
             
-            // 格式化訂單文字
+            // 建立 5 大品項工整訂單內文
             let text = `【金乃家真好呷】新訂單通知\n`;
             text += `-------------------------\n`;
             text += `訂購人：${name}\n`;
@@ -304,28 +374,137 @@
             if(wQty > 0) text += `• 日本A5和牛漢堡排：${wQty} 顆 (約100g)\n`;
             if(pQty > 0) text += `• 精選豬絞肉：${pQty} 公斤\n`;
             if(bQty > 0) text += `• 特製和牛絞肉：${bQty} 公斤\n`;
+            if(cQty > 0) text += `• 日式職人唐揚炸雞：${cQty} 公斤\n`;
+            if(oQty > 0) text += `• 頂級純和牛牛油：${oQty} 公斤\n`;
             text += `-------------------------\n`;
             text += `預估總金額：NT$ ${total} 元\n\n`;
-            text += `※ 請直接按右下角「傳送」，小幫手收到會立刻為您安排！`;
+            text += `※ 請選取您的【金乃家官方帳號】並按下傳送發出。`;
 
+            // 安全網址文字編碼
             const encodedText = encodeURIComponent(text);
             
-            // 第一主線：直接帶入文字聊天室指令
-            const primaryUrl = `https://line.me/R/oaMessage/@669knpwy/?${encodedText}`;
-            // 第二防線：您的專屬 lin.ee 短網址備用
-            const backupUrl = `https://lin.ee/V0vtkJS`;
+            // LINE 安全分享指令
+            const shareUrl = `https://line.me/R/share?text=${encodedText}`;
             
-            alert("訂單已建立！即將為您開啟 LINE 官方聊天室，請直接按下「傳送」鍵。");
-            
-            // 執行跳轉（主線）
-            window.location.href = primaryUrl;
+            alert("訂單已建立！即將自動為您開啟 LINE 選擇視窗，請點選【金乃家官方帳號】將訂單文字送出。");
+            window.location.href = shareUrl;
+        }
+    </script>
+</body>
+</html>
 
-            // 防呆觸發器：如果 1.5 秒後頁面沒被 LINE App 蓋掉，代表主線指令失敗，自動轉用備用短網址
-            setTimeout(function() {
-                if (!document.hidden) {
-                    window.location.href = backupUrl;
-                }
-            }, 1500);
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>金乃家真好呷 - 頂級和牛與精選肉品專賣</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        html { scroll-behavior: smooth; }
+        .gold-gradient {
+            background: linear-gradient(135deg, #BF953F 0%, #FCF6BA 25%, #B38728 50%, #FBF5B7 75%, #AA771C 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+    </style>
+</head>
+<body class="bg-stone-50 text-stone-800 font-sans antialiased">
+
+    <header class="sticky top-0 z-50 bg-stone-900/95 text-white backdrop-blur shadow-md">
+        <div class="max-w-7xl mx-auto px-4 py-3 flex justify-between items-center">
+            <a href="#" class="flex items-center space-x-2 group">
+                <div class="relative flex items-center justify-center w-10 h-10 rounded-full border-2 border-amber-400 bg-stone-800">
+                    <span class="text-amber-400 font-bold text-lg">金</span>
+                </div>
+                <div class="flex flex-col">
+                    <span class="text-xl font-black tracking-wider gold-gradient">金乃家真好呷</span>
+                    <span class="text-[10px] text-stone-400 tracking-widest -mt-1">PREMIUM MEAT</span>
+                </div>
+            </a>
+            <nav class="hidden md:flex space-x-8 text-sm font-medium">
+                <a href="#about" class="hover:text-amber-400 transition">關於我們</a>
+                <a href="#products" class="hover:text-amber-400 transition">美味菜單</a>
+                <a href="#order" class="hover:text-amber-400 transition">即時點餐</a>
+            </nav>
+            <a href="#order" class="bg-amber-500 hover:bg-amber-600 text-stone-950 px-4 py-2 rounded-full text-sm font-bold transition flex items-center space-x-1 shadow-lg">
+                <i class="fa-solid fa-utensils"></i>
+                <span>立即點餐</span>
+            </a>
+        </div>
+    </header>
+
+    <script>
+        const PRICES = {
+            wagyu_burger: 50,
+            pork_minced: 250,
+            beef_minced: 280,
+            fried_chicken: 260,
+            wagyu_oil: 220
+        };
+
+        function changeQty(id, amount) {
+            const input = document.getElementById(id);
+            let current = parseInt(input.value) || 0;
+            current += amount;
+            if (current < 0) current = 0;
+            input.value = current;
+            calculateTotal();
+        }
+
+        function calculateTotal() {
+            let total = 0;
+            for (const [id, price] of Object.entries(PRICES)) {
+                const qty = parseInt(document.getElementById(id).value) || 0;
+                total += qty * price;
+            }
+            document.getElementById('totalPrice').innerText = total.toLocaleString();
+            return total;
+        }
+
+        function submitOrder() {
+            const name = document.getElementById('custName').value.trim();
+            const phone = document.getElementById('custPhone').value.trim();
+            
+            // 檢查：姓名或電話是否為空
+            if (!name || !phone) {
+                alert('⚠️ 請注意：為了聯繫您，【訂購人姓名】與【聯絡電話】為必填欄位，請檢查後再送出！');
+                return; // 直接中斷，不執行後續動作
+            }
+            
+            const wQty = parseInt(document.getElementById('wagyu_burger').value) || 0;
+            const pQty = parseInt(document.getElementById('pork_minced').value) || 0;
+            const bQty = parseInt(document.getElementById('beef_minced').value) || 0;
+            const cQty = parseInt(document.getElementById('fried_chicken').value) || 0;
+            const oQty = parseInt(document.getElementById('wagyu_oil').value) || 0;
+            
+            if (wQty === 0 && pQty === 0 && bQty === 0 && cQty === 0 && oQty === 0) {
+                alert('請至少選擇一樣商品再送出訂單喔！');
+                return;
+            }
+
+            const total = calculateTotal();
+            
+            let text = `【金乃家真好呷】新訂單通知\n`;
+            text += `-------------------------\n`;
+            text += `訂購人：${name}\n`;
+            text += `電話：${phone}\n`;
+            text += `-------------------------\n`;
+            if(wQty > 0) text += `• 日本A5和牛漢堡排：${wQty} 顆\n`;
+            if(pQty > 0) text += `• 精選豬絞肉：${pQty} 公斤\n`;
+            if(bQty > 0) text += `• 特製和牛絞肉：${bQty} 公斤\n`;
+            if(cQty > 0) text += `• 日式職人唐揚炸雞：${cQty} 公斤\n`;
+            if(oQty > 0) text += `• A5黑毛和牛牛油：${oQty} 公斤\n`;
+            text += `-------------------------\n`;
+            text += `預估總金額：NT$ ${total} 元\n\n`;
+            text += `※ 請選取您的【金乃家官方帳號】並按下傳送發出。`;
+
+            const encodedText = encodeURIComponent(text);
+            const shareUrl = `https://line.me/R/share?text=${encodedText}`;
+            
+            alert("訂單已確認！即將自動為您開啟 LINE 選擇視窗。");
+            window.location.href = shareUrl;
         }
     </script>
 </body>
